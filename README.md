@@ -1,1 +1,1 @@
-# projeto-integrador-frontend-thiagomoura
+#  Comida de Vó Cardápio digital do restaurante Comida de Vó, que é especializado em culinária nordestina com aquele sabor caseiro e afetivo que só uma avó consegue fazer. O projeto apresenta pratos típicos da região nordeste do país, com fotos, descrições e preços. Projeto Integrador da disciplina de Desenvolvimento Front-end para Web.
