@@ -3,38 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <title>Comida de Vó</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>Comida de Vó</h1>
-    <p>Cardápio digital do restaurante Comida de Vó, especializado em culinária regional brasileira.</p>
-<h2>Pratos típicos</h2>
-    <ul>
-        <li>Feijoada completa</li>
-        <li>Moqueca de peixe</li>
-        <li>Baião de dois</li>
-    </ul>
-    <h2>Preços</h2>
-    <table>
-        <tr>
-            <th>Prato</th>
-            <th>Preço</th>
-        </tr>
-        <tr>
-            <td>Feijoada completa</td>
-            <td>R$ 45,00</td>
-        </tr>
-        <tr>
-            <td>Moqueca de peixe</td>
-            <td>R$ 52,00</td>
-        </tr>
-        <tr>
-            <td>Baião de dois</td>
-            <td>R$ 38,00</td>
-        </tr>
-    </table>
-    <h2>Saiba mais</h2>
-    <p>Conheça mais sobre a <a href="https://pt.wikipedia.org/wiki/Feijoada" target="_blank" rel="noopener noreferrer">história da feijoada</a> na Wikipédia.</p>
-<h2>Prato em destaque</h2>
-    <img src="assets/images/feijoada.jpg" alt="Prato de feijoada completa com arroz, farofa e laranja">
+
+    <header>
+        <h1>Comida de Vó</h1>
+        <p>Cardápio digital do restaurante Comida de Vó, especializado em culinária regional brasileira.</p>
+    </header>
+
+    <main>
+
+        <section aria-labelledby="cardapio-heading">
+            <h2 id="cardapio-heading">Cardápio</h2>
+
+            <h3>Pratos típicos</h3>
+            <ul>
+                <li>Feijoada completa</li>
+                <li>Moqueca de peixe</li>
+                <li>Baião de dois</li>
+            </ul>
+
+            <h3>Preços</h3>
+            <table>
+                <tr>
+                    <th>Prato</th>
+                    <th>Preço</th>
+                </tr>
+                <tr>
+                    <td>Feijoada completa</td>
+                    <td>R$ 45,00</td>
+                </tr>
+                <tr>
+                    <td>Moqueca de peixe</td>
+                    <td>R$ 52,00</td>
+                </tr>
+                <tr>
+                    <td>Baião de dois</td>
+                    <td>R$ 38,00</td>
+                </tr>
+            </table>
+        </section>
+
+        <section aria-labelledby="sobre-heading">
+            <h2 id="sobre-heading">Sobre o restaurante</h2>
+            <p>Conheça mais sobre a <a href="https://pt.wikipedia.org/wiki/Feijoada" target="_blank" rel="noopener noreferrer">história da feijoada</a> na Wikipédia.</p>
+
+            <h3>Prato em destaque</h3>
+            <img src="assets/images/feijoada.webp" alt="Prato de feijoada completa com arroz, farofa e laranja" width="500">
+        </section>
+
+        <section aria-labelledby="reserva-heading">
+            <h2 id="reserva-heading">Faça sua reserva</h2>
+
+            <form>
+                <fieldset>
+                    <legend>Dados da reserva</legend>
+
+                    <div>
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div>
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" required pattern="[0-9]{10,11}" placeholder="Só números, com DDD">
+                    </div>
+
+                    <div>
+                        <label for="data">Data da reserva</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+
+                    <div>
+                        <label for="pessoas">Número de pessoas</label>
+                        <input type="number" id="pessoas" name="pessoas" min="1" max="20" required>
+                    </div>
+
+                    <div>
+                        <label for="observacoes">Observações</label>
+                        <textarea id="observacoes" name="observacoes"></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Reservar mesa</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Comida de Vó</p>
+    </footer>
+
 </body>
-</html> 
+</html>
